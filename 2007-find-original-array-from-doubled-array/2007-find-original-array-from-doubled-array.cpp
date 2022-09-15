@@ -16,7 +16,8 @@ public:
         if(zeroes%2)return {};
         
         unordered_map<int,int>map;
-        for(int i = zeroes;i<n;i++){
+        for(int i = 0;i<n;i++){
+            if(changed[i] == 0) continue;
             
             map[changed[i]]++;
             
